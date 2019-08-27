@@ -1,7 +1,9 @@
 platform :ios, '9.0'
 inhibit_all_warnings!
 
-target 'RxExamples' do
+workspace 'RxExamples.xcworkspace'
+
+def project_pods
   use_frameworks!
 
   pod 'Moya/RxSwift'
@@ -10,7 +12,7 @@ target 'RxExamples' do
   pod 'NSObject+Rx' # 
   pod 'RxDataSources'  # https://github.com/RxSwiftCommunity/RxDataSources
   pod 'Moya-ObjectMapper' # https://github.com/bmoliveira/Moya-ObjectMapper
-  pod 'Validator', git: 'https://github.com/adamwaite/Validator.git' # 表单验证
+  pod 'Validator' # 表单验证
   pod 'SVProgressHUD'
   pod 'Hero'  # https://github.com/HeroTransitions/Hero
   pod 'DZNEmptyDataSet', '~> 1.8.1'  # 空态 https://github.com/dzenbot/DZNEmptyDataSet
@@ -18,6 +20,14 @@ target 'RxExamples' do
   pod 'Then', '~> 2.5.0' # 语法糖 https://github.com/devxoul/Then
   pod 'ViewAnimator', '~> 2.5.1' # 动画库 https://github.com/marcosgriselli/ViewAnimator
   pod 'SwifterSwift', '~> 5.0.0' # 类似 YYKit https://github.com/SwifterSwift/SwifterSwift
+end
 
+target 'RxExamples' do
+project 'RxExamples.xcodeproj'
+  project_pods
+end
 
+target 'MyRxSwiftExample' do
+project 'MyRxSwiftExample/MyRxSwiftExample.xcodeproj'
+  project_pods
 end
