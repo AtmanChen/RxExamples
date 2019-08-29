@@ -69,7 +69,8 @@ final class HomeViewController: BaseViewController {
             t = TapViewController.self
         case .register:
             t = RegisterViewController.self
-        default: break
+        case .word:
+            t = JobViewController.self
         }
         self.navigationController?.pushViewController(UIStoryboard.load(controller: t))
     }

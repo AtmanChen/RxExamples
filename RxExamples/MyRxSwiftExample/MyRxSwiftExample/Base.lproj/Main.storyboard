@@ -199,25 +199,70 @@
                                     <constraint firstItem="i21-t8-owL" firstAttribute="leading" secondItem="rLL-oo-oQF" secondAttribute="leading" id="yaG-GL-T0J"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffp-8d-55G">
+                                <rect key="frame" x="182" y="545.5" width="50.5" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="I6X-dT-OxZ">
+                                <rect key="frame" x="197" y="581" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ffp-8d-55G" firstAttribute="centerX" secondItem="zkl-e2-d3S" secondAttribute="centerX" id="50P-Sy-bnJ"/>
+                            <constraint firstItem="ffp-8d-55G" firstAttribute="top" secondItem="rLL-oo-oQF" secondAttribute="bottom" constant="40" id="7tC-Mz-F4e"/>
                             <constraint firstItem="rLL-oo-oQF" firstAttribute="centerX" secondItem="zkl-e2-d3S" secondAttribute="centerX" id="BB2-gf-Ewi"/>
                             <constraint firstItem="bCp-y4-IY7" firstAttribute="trailing" secondItem="rLL-oo-oQF" secondAttribute="trailing" constant="36" id="Bp7-3P-C2G"/>
+                            <constraint firstItem="I6X-dT-OxZ" firstAttribute="top" secondItem="ffp-8d-55G" secondAttribute="bottom" constant="8" id="Cnn-uv-6Kq"/>
                             <constraint firstItem="rLL-oo-oQF" firstAttribute="centerY" secondItem="zkl-e2-d3S" secondAttribute="centerY" constant="-20" id="GLN-v2-xHh"/>
+                            <constraint firstItem="I6X-dT-OxZ" firstAttribute="centerX" secondItem="zkl-e2-d3S" secondAttribute="centerX" id="VPp-PC-wEJ"/>
                             <constraint firstItem="rLL-oo-oQF" firstAttribute="leading" secondItem="bCp-y4-IY7" secondAttribute="leading" constant="36" id="j38-oi-zTT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bCp-y4-IY7"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="I6X-dT-OxZ" id="Kdv-hg-trJ"/>
                         <outlet property="emailTF" destination="3hp-mc-9Ry" id="HOg-eB-Rz7"/>
                         <outlet property="passwordTF" destination="6Fy-y9-koy" id="Eyj-14-S76"/>
                         <outlet property="registerButton" destination="bx0-Ve-h91" id="V42-vs-ae6"/>
+                        <outlet property="validateResultLabel" destination="ffp-8d-55G" id="8uq-sW-piZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ON2-Xk-mNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3149.275362318841" y="86.383928571428569"/>
+        </scene>
+        <!--Job View Controller-->
+        <scene sceneID="3m5-fw-AG7">
+            <objects>
+                <viewController id="Z32-T3-xoE" customClass="JobViewController" customModule="MyRxSwiftExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6KA-yI-NkP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cNI-WN-rxM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S96-eF-ppt" firstAttribute="trailing" secondItem="cNI-WN-rxM" secondAttribute="trailing" id="Ajc-XD-815"/>
+                            <constraint firstItem="S96-eF-ppt" firstAttribute="bottom" secondItem="cNI-WN-rxM" secondAttribute="bottom" id="GgU-gZ-FAB"/>
+                            <constraint firstItem="cNI-WN-rxM" firstAttribute="leading" secondItem="S96-eF-ppt" secondAttribute="leading" id="Nlk-KF-zRv"/>
+                            <constraint firstItem="cNI-WN-rxM" firstAttribute="top" secondItem="S96-eF-ppt" secondAttribute="top" id="PuR-Bl-2Ov"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S96-eF-ppt"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cNI-WN-rxM" id="Bfe-h1-ZcW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cM-KB-3N6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3822" y="96"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="mtZ-3k-hOf">

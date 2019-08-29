@@ -22,6 +22,17 @@
 		2B81FDFC23152A50008C11D8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FDFB23152A50008C11D8 /* RegisterViewController.swift */; };
 		2B81FDFE23153034008C11D8 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FDFD23153034008C11D8 /* RegisterViewModel.swift */; };
 		2B81FE01231530DC008C11D8 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE00231530DC008C11D8 /* BaseViewModel.swift */; };
+		2B81FE072316323C008C11D8 /* JobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE062316323C008C11D8 /* JobViewController.swift */; };
+		2B81FE0A231633BD008C11D8 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE08231633BD008C11D8 /* JobTableViewCell.swift */; };
+		2B81FE0B231633BD008C11D8 /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B81FE09231633BD008C11D8 /* JobTableViewCell.xib */; };
+		2B81FE0D2316363F008C11D8 /* JobItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE0C2316363F008C11D8 /* JobItem.swift */; };
+		2B81FE0F23163778008C11D8 /* JobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE0E23163778008C11D8 /* JobViewModel.swift */; };
+		2B81FE1323165382008C11D8 /* BaseAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE1223165382008C11D8 /* BaseAPIManager.swift */; };
+		2B81FE1523165447008C11D8 /* JobAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE1423165447008C11D8 /* JobAPIManager.swift */; };
+		2B81FE1723165974008C11D8 /* Moya+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE1623165974008C11D8 /* Moya+Ex.swift */; };
+		2B81FE19231659EA008C11D8 /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE18231659EA008C11D8 /* RequestResult.swift */; };
+		2B81FE1B23165C6D008C11D8 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE1A23165C6D008C11D8 /* ErrorType.swift */; };
+		2B81FE1D23165DE5008C11D8 /* Response+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81FE1C23165DE5008C11D8 /* Response+Ex.swift */; };
 		B2F6D484AE49995AC4F94261 /* Pods_MyRxSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE82A6BA12B8388598E539FF /* Pods_MyRxSwiftExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +56,18 @@
 		2B81FDFB23152A50008C11D8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2B81FDFD23153034008C11D8 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		2B81FE00231530DC008C11D8 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		2B81FE062316323C008C11D8 /* JobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
+		2B81FE08231633BD008C11D8 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		2B81FE09231633BD008C11D8 /* JobTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
+		2B81FE0C2316363F008C11D8 /* JobItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobItem.swift; sourceTree = "<group>"; };
+		2B81FE0E23163778008C11D8 /* JobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewModel.swift; sourceTree = "<group>"; };
+		2B81FE1223165382008C11D8 /* BaseAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIManager.swift; sourceTree = "<group>"; };
+		2B81FE1423165447008C11D8 /* JobAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobAPIManager.swift; sourceTree = "<group>"; };
+		2B81FE1623165974008C11D8 /* Moya+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Ex.swift"; sourceTree = "<group>"; };
+		2B81FE18231659EA008C11D8 /* RequestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
+		2B81FE1A23165C6D008C11D8 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		2B81FE1C23165DE5008C11D8 /* Response+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Ex.swift"; sourceTree = "<group>"; };
+		2BF22F79231772FB00B7C0D3 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5FBD677ED52261E5232E17A6 /* Pods-MyRxSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRxSwiftExample.release.xcconfig"; path = "Target Support Files/Pods-MyRxSwiftExample/Pods-MyRxSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		90144B2063B7BE49195854E6 /* Pods-MyRxSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRxSwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-MyRxSwiftExample/Pods-MyRxSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 		EE82A6BA12B8388598E539FF /* Pods_MyRxSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyRxSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,9 +106,11 @@
 		2B0288062315102800141C97 /* MyRxSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				2B81FE1123165310008C11D8 /* network */,
 				2B028820231513D400141C97 /* utils */,
 				2B02881C2315135F00141C97 /* modules */,
 				2B0288072315102800141C97 /* AppDelegate.swift */,
+				2BF22F79231772FB00B7C0D3 /* MyPlayground.playground */,
 				2B02880B2315102800141C97 /* Main.storyboard */,
 				2B02880E2315102900141C97 /* Assets.xcassets */,
 				2B0288102315102900141C97 /* LaunchScreen.storyboard */,
@@ -107,6 +132,7 @@
 		2B02881C2315135F00141C97 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				2B81FE052316322C008C11D8 /* job */,
 				2B81FDFA23152A44008C11D8 /* register */,
 				2B81FDF4231527AC008C11D8 /* back */,
 				2B02882E231524F800141C97 /* tap */,
@@ -130,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				2B028821231513DF00141C97 /* UI+Ex.swift */,
+				2B81FE1623165974008C11D8 /* Moya+Ex.swift */,
+				2B81FE1C23165DE5008C11D8 /* Response+Ex.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -156,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				2B02882A231517E900141C97 /* TableSectionItem.swift */,
+				2B81FE18231659EA008C11D8 /* RequestResult.swift */,
+				2B81FE1A23165C6D008C11D8 /* ErrorType.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -191,6 +221,27 @@
 				2B81FE00231530DC008C11D8 /* BaseViewModel.swift */,
 			);
 			path = viewModel;
+			sourceTree = "<group>";
+		};
+		2B81FE052316322C008C11D8 /* job */ = {
+			isa = PBXGroup;
+			children = (
+				2B81FE062316323C008C11D8 /* JobViewController.swift */,
+				2B81FE08231633BD008C11D8 /* JobTableViewCell.swift */,
+				2B81FE09231633BD008C11D8 /* JobTableViewCell.xib */,
+				2B81FE0C2316363F008C11D8 /* JobItem.swift */,
+				2B81FE0E23163778008C11D8 /* JobViewModel.swift */,
+			);
+			path = job;
+			sourceTree = "<group>";
+		};
+		2B81FE1123165310008C11D8 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				2B81FE1223165382008C11D8 /* BaseAPIManager.swift */,
+				2B81FE1423165447008C11D8 /* JobAPIManager.swift */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 		2EFDDC92379F567B0C53A6E2 /* Pods */ = {
@@ -267,6 +318,7 @@
 				2B0288122315102900141C97 /* LaunchScreen.storyboard in Resources */,
 				2B02880F2315102900141C97 /* Assets.xcassets in Resources */,
 				2B02880D2315102800141C97 /* Main.storyboard in Resources */,
+				2B81FE0B231633BD008C11D8 /* JobTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,13 +371,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B81FE072316323C008C11D8 /* JobViewController.swift in Sources */,
+				2B81FE1B23165C6D008C11D8 /* ErrorType.swift in Sources */,
 				2B81FDF6231527B5008C11D8 /* BackViewController.swift in Sources */,
+				2B81FE1D23165DE5008C11D8 /* Response+Ex.swift in Sources */,
+				2B81FE1523165447008C11D8 /* JobAPIManager.swift in Sources */,
 				2B81FDFC23152A50008C11D8 /* RegisterViewController.swift in Sources */,
+				2B81FE0A231633BD008C11D8 /* JobTableViewCell.swift in Sources */,
+				2B81FE0F23163778008C11D8 /* JobViewModel.swift in Sources */,
 				2B028822231513DF00141C97 /* UI+Ex.swift in Sources */,
+				2B81FE1723165974008C11D8 /* Moya+Ex.swift in Sources */,
 				2B02882B231517E900141C97 /* TableSectionItem.swift in Sources */,
 				2B81FDFE23153034008C11D8 /* RegisterViewModel.swift in Sources */,
+				2B81FE19231659EA008C11D8 /* RequestResult.swift in Sources */,
+				2B81FE0D2316363F008C11D8 /* JobItem.swift in Sources */,
 				2B81FE01231530DC008C11D8 /* BaseViewModel.swift in Sources */,
 				2B0288082315102800141C97 /* AppDelegate.swift in Sources */,
+				2B81FE1323165382008C11D8 /* BaseAPIManager.swift in Sources */,
 				2B02881F2315137B00141C97 /* BaseViewController.swift in Sources */,
 				2B028827231516B000141C97 /* BaseNavigationController.swift in Sources */,
 				2B0288252315165700141C97 /* HomeViewController.swift in Sources */,
